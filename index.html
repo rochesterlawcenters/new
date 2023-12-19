@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Secure your legacy with Rochester Law Centers – Your trusted estate planning attorneys in MI, offering expert services in wills, trusts, probate, and more.">
+    <title> Comprehensive Estate Planning Services Rochester Law Centers, MI</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Article container styling, mirroring the FAQ style for coherence */
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+
+
+
+        }
+
+        .article-container h1,
+        .article-container h2 {
+            color: #2f855a;
+        }
+
+        .article-container h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .article-section {
+            margin-bottom: 20px;
+        }
+
+        .article-container h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            background: #68d391;
+            color: #ffffff;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .article-container h3 {
+            font-size: 24px;
+            margin-bottom: -40px;
+            padding: 15px 20px;
+            background: #ffffff;
+            color: #2d3748;
+            border-radius: 6px;
+            padding-bottom: -12px;
+        }
+
+
+        .article-section p {
+            padding: 20px;
+            background: #ffffff;
+            color: #2d3748;
+            line-height: 1.6;
+            border-left: 3px solid #ffffff;
+            border-radius: 6px;
+        }
+
+        .article-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
+            background: #ffffff;
+            /* Pure white to make the green pop */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Soft outer shadow for depth */
+            transition: .7s ease;
+        }
+
+        .faq-container h2 {
+            text-align: center;
+            color: #2f855a;
+            /* A darker shade of green for the heading */
+            margin-bottom: 30px;
+            font-size: 28px;
+            transition: .7s ease;
+        }
+
+        .faq-question {
+            margin-bottom: 15px;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: .7s ease;
+        }
+
+        .faq-question h3 {
+            cursor: pointer;
+            margin: 0;
+            padding: 15px 20px;
+            background: #68d391;
+            /* A vibrant, light green */
+            color: #ffffff;
+            /* White text for contrast */
+            position: relative;
+            /* Needed for absolute positioning of the icon */
+            transition: background-color 0.3s ease;
+            transition: .7s ease;
+        }
+
+        .faq-question h3:hover,
+        .faq-question h3.active {
+            background: #48bb78;
+            /* A slightly darker green on hover/active for depth */
+        }
+
+        .faq-question h3::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            /* Center vertically */
+            transform: translateY(-50%);
+            /* Align correctly in the center vertically */
+            font-weight: bold;
+            color: #ffffff;
+            /* White for the icon to stand out */
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question h3.active::after {
+            content: '−';
+            /* Using the minus character for cross-browser consistency */
+            transform: translateY(-50%) rotate(180deg);
+            transition: .7s ease;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 20px;
+            color: #2d3748;
+            /* A soft dark shade for the text, ensuring good readability */
+            line-height: 1.6;
+            background: #e6fffa;
+            /* The lightest green of the bunch for a subtle look */
+            border-top: 1px solid #c6f6d5;
+            /* A color that's in between the dark and vibrant greens */
+            transition: .7s ease;
+        }
+
+        /* Active style for the answer */
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Smooth transitioning */
+        .faq-answer,
+        .faq-question h3,
+        .faq-question h3::after {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Style for the border-left of an FAQ answer when active */
+        .faq-answer.active {
+            border-left: 3px solid #48bb78;
+            /* Matches the hover color for consistency */
+        }
+
+        /* General paragraph styling within a question */
+        .faq-answer p {
+            margin-bottom: 10px;
+        }
+
+        /* Last child paragraph spacing in answer */
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .map-container {
+            width: 100%;
+            max-width: 750px;
+            /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            /* Center the map */
+            color: #333;
+
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            /* Adjust the height as needed */
+            border-radius: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+
+        }
+
+        .image-container img {
+            display: inline-block;
+            max-width: 750px;
+            border-radius: 10px;
+        }
+
+        .p1 {
+            margin-top: -50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="article-container">
+        <h1>Estate Planning Attorney Services at Rochester Law Centers Mi
+        </h1>
+
+        <section class="article-section">
+            <p> At Rochester Law Centers, our suite of services is meticulously tailored to encompass the breadth and
+                depth of your estate planning needs. With a robust portfolio including Estate Planning, Medicaid
+                Planning, Probate, Trusts, Wills, Elder Law, Real Estate, and Business Law, our attorneys embody the
+                pinnacle of legal proficiency. Each Rochester Estate Planning Lawyer is committed to upholding your
+                interests and ensuring your peace of mind.
+            </p>
+            <h2>Estate Planning Attorney</h2>
+            <p>
+                Strategizing for the future is an art refined by legal expertise. Our Estate Planning Attorneys navigate
+                the subtleties of asset protection, will drafting, and future directives with finesse, ensuring that
+                your legacy flourishes for generations. Entrust your wishes to Rochester Law Centers, where strategic
+                planning meets compassionate understanding.
+
+            </p>
+            <h2>
+                Medicaid Planning
+            </h2>
+            <p>Healthcare costs loom large in future planning, but with our Medicaid Planning services, patients and
+                families find solace and security. Let our adept lawyers guide you through the complex web of Medicaid
+                implications, securing your eligibility while protecting your hard-earned assets.
+            </p>
+
+            <h2>Probate</h2>
+            <p>Navigating the vigilant process of probate can be a solemn affair post-departure. Our Probate attorneys
+                stand by your family to spearhead this journey, delivering calm to your grieving loved ones with the
+                stability of knowledgeable counsel and robust representation through the entire probate procedure.
+            </p>
+
+            <h2>Trust Lawyer Services</h2>
+            <p>Configuring Trusts are integral to securing and managing your assets. Our expert Trust Lawyers offer
+                astute advisement, generating Living Trusts, Revocable Trusts, and Special Needs Trusts, all customized
+                to the fabric of your financial tapestry, providing enduring safeguards for your assets.
+            </p>
+
+            <h2>
+                Will Attorney
+            </h2>
+            <p>The articulation of your final words is a matter of solemn significance. Our Will Attorneys craft
+                documents that speak with clarity and authority, reflecting your definitive decisions and preserving
+                your voice in perpetuity.
+            </p>
+            <h2>
+                Elder Law Attorney
+            </h2>
+            <p>Empathy intersects with legality within our Elder Law services. We specialize in addressing the unique
+                legal needs of seniors, from the protection of assets to healthcare directives, ensuring that every
+                season of life is navigated with dignity and due consideration.
+            </p>
+            <h2>
+                Real Estate Attorney
+            </h2>
+            <p>
+                In the complex landscape of property law, our Real Estate Attorneys stand as firm pillars, facilitating
+                transactions with precision, managing disputes with poise, and ensuring that your real estate
+                investments are legally sound and optimally structured.
+
+            </p>
+            <h2>
+                Business Law
+            </h2>
+            <p>Our Business Law services provide a foundation upon which commercial aspirations can confidently build.
+                From start-ups to established entities, we offer comprehensive legal counsel, reflecting a profound
+                understanding of the commercial context and the challenges faced by businesses today.
+            </p>
+            <h2>Embark on a Journey of Secure Planning with Rochester Law Centers
+            </h2>
+            <p>Safeguarding your assets, protecting your loved ones, and ensuring the continuity of your legacy is not
+                just our commitment; it’s our vocation. At Rochester Law Centers, every Estate Planning Lawyer carries
+                the torch of your intentions into the future. Contact us today to schedule a consultation and take the
+                pivotal step toward tranquility and assurance in all your estate planning affairs.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Contact Information and Consultation</h2>
+            <p>Embark on your journey toward comprehensive estate planning by contacting Rochester Law Centers. Our team
+                is
+                ready to provide the guidance you need for a secure and tailored estate plan. Reach out to us for a
+                consultation, and take the first step toward ensuring your legacy aligns with your intentions.</p>
+            <p><b>Rochester Law Centers</b></p>
+
+            <p><b>Emails:</b> info@rlclawyers.com
+                <br>
+                <b>Address:</b> 805 Oakwood Dr #125, Rochester, MI 48307, United States
+                <br>
+                <b>Phone Number:</b> +12487755984
+                <br>
+                <b>Website:</b> rochesterlawcenter.Com
+            </p>
+
+        </section>
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.968706680348!2d-83.1436633!3d42.683205199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824e9b984b59893%3A0x5696a4f9d976aca8!2sRochester%20Law%20Center!5e0!3m2!1sen!2s!4v1702555524540!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <h2>Conclusion</h2>
+        <p> Choose Rochester Law Centers, where every <a href="https://maps.app.goo.gl/pBVFPAe9whyFdrnC6"
+                style="color:blue; text-decoration: underline;">Attorney Estate Planning Lawyer</a> is not merely an
+            advocate, but a
+            guardian of your life’s work. Trust our collective legal acumen to deliver not just solutions, but certainty
+            and a future that echoes with your values and visions.
+        </p>
+    </div>
+    </div>
+
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <div class="faq-question">
+                <h3 class="question-title">Q1: What services do Rochester Law Centers provide for estate planning?</h3>
+                <div class="faq-answer">
+                    <p>Rochester Law Centers offers a comprehensive range of estate planning services that include will
+                        drafting, trust administration, Medicaid planning, probate services, as well as elder law, real
+                        estate, and business law advisory.</p>
+                </div>
+            </div>
+            <div class="faq-question">
+                <h3 class="question-title">Q2: Can Rochester Law Centers assist with Medicaid Planning?</h3>
+                <div class="faq-answer">
+                    <p>Yes, Rochester Law Centers can guide you through the intricacies of Medicaid Planning, helping to
+                        ensure your eligibility and protect your assets.</p>
+                </div>
+            </div>
+            <div class="faq-question">
+                <h3 class="question-title">Q3: Does Rochester Law Centers offer legal services related to real estate?
+                    Medicare?</h3>
+                <div class="faq-answer">
+                    <p>Absolutely, Rochester Law Centers has Real Estate Attorneys that can handle complex property law
+                        matters, ensuring that your real estate transactions are conducted smoothly and your investments
+                        are legally protected.</p>
+                </div>
+            </div>
+            <div class="faq-question">
+                <h3 class="question-title">Q4:
+                    How can I contact Rochester Law Centers for a consultation?</h3>
+                <div class="faq-answer">
+                    <p>You can start your estate planning journey with Rochester Law Centers by reaching out via email
+                        at info@rlclawyers.com, or by calling them at +12487755984. Their office is located at 805
+                        Oakwood Dr #125, Rochester, MI 48307, United States.</p>
+                </div>
+            </div>
+
+            <!-- More questions can be added here -->
+        </div>
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                    href="YOUR_LINK_HERE">
+                    <img src="https://cdn.statically.io/img/rochesterlawcenter.com/wp-content/uploads/2019/06/cropped-estate-planning-attorneys-rochester-hills-mi-rochester-law-center-logo-dark-standard.png?w=250&quality=50&f=auto"
+                        alt="">
+                    <span class="ml-3 text-xl"></span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                    <a href="https://twitter.com/RochesterLaw" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                        target="_blank">@RochesterLaw</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-500" href="https://www.facebook.com/RochesterLawCenter">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500" href="https://twitter.com/RochesterLaw">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/rochester-law-center-pllc/">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const questions = document.querySelectorAll('.faq-question h3');
+
+            questions.forEach((question) => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const wasActive = question.classList.contains('active');
+
+                    // Collapse all answers
+                    questions.forEach((item) => {
+                        item.classList.remove('active');
+                        item.nextElementSibling.classList.remove('active');
+                        item.nextElementSibling.style.display = 'none';
+                    });
+
+                    // Toggle this question/answer if it wasn't active before
+                    if (!wasActive) {
+                        question.classList.add('active');
+                        answer.classList.add('active');
+                        answer.style.display = 'block';
+                    }
+
+                    // Smooth scroll to the question
+                    question.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
